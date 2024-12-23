@@ -1,0 +1,27 @@
+.numbers-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+
+    .numbers-container__number {
+        cursor: pointer;
+        background: #fff;
+        border: none;
+        outline: none;
+        width: 45px;
+        height: 45px;
+        border-radius: 7px;
+        transition: .2s ease-in;
+
+        &:hover {
+            background: #918B76;
+            color: #E6D695;
+            transition: .2s ease-out;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
